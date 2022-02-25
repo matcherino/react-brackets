@@ -16,6 +16,7 @@ export const SeedItem = styled.div`
   box-shadow: 0 2px 4px -2px #111630;
   text-align: center;
   position: relative;
+  height: 32px;
 `;
 
 export const SeedTeam = styled.div`
@@ -48,8 +49,8 @@ height: 0;
 
 export const SingleLineSeed = styled.div<SeedProps>(
   (props) => `
-padding: 1em 1.5em;
-min-width: 225px;
+padding: 2em 1.5em;
+min-width: 244px;
 width:100%;
 position: relative;
 display: flex;
@@ -76,11 +77,11 @@ font-size: 14px;
   }
   &:nth-child(even)::after {
     border-bottom: 1px solid #707070;
-    top: -0.5px;
+    top: 16.5px;
   }
   &:nth-child(odd)::after {
     border-top: 1px solid #707070;
-    top: calc(50% - 0.5px);
+    top: calc(50% - -15px);
   }
 }
 `
@@ -88,8 +89,8 @@ font-size: 14px;
 
 export const Seed = styled.div<SeedProps>(
   (props) => `
-  padding: 1em 1.5em;
-  min-width: 225px;
+  padding: 2em 1.5em;
+  min-width: 244px;
   width:100%;
   position: relative;
   display: flex;
@@ -105,7 +106,7 @@ export const Seed = styled.div<SeedProps>(
     &::after {
         content: "";
         position: absolute;
-        height: 50%;
+        height: calc(50% - -15px);
         width: 1.5em;
       [dir="rtl"] & {
         left: 0px;
@@ -119,7 +120,7 @@ export const Seed = styled.div<SeedProps>(
       content:'';
       border-top: 1px solid #707070;
       position:absolute;
-      top: -0.5px;
+      top: 15px;
       width:1.5em;
       [dir="rtl"] & {
         left:-1.5em;
@@ -131,7 +132,7 @@ export const Seed = styled.div<SeedProps>(
 
     &:nth-child(even)::after {
       border-bottom: 1px solid #707070;
-      top: -0.5px;
+      top: 4px;
      [dir="rtl"] & {
         border-left: 1px solid #707070;
         }
@@ -141,7 +142,7 @@ export const Seed = styled.div<SeedProps>(
     }
     &:nth-child(odd):not(:last-child)::after {
       border-top: 1px solid #707070;
-      top: calc(50% - 0.5px);
+      top: calc(50% - -14px);
       [dir="rtl"] & {
         border-left: 1px solid #707070;
         }
