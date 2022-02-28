@@ -61,12 +61,10 @@ const SingleElimination = ({
       if (round.seeds[0].data.bracketNum === 1) {
         return s.formattedData.entrantA.name === 'BYE' || s.formattedData.entrantB.name === 'BYE';
       }
-
       return s.formattedData.entrantA.name === 'BYE' && s.formattedData.entrantB.name === 'BYE';
     });
 
     if (bracket?.entrants?.length > 4 && isHideByes && byeMatches.length === round.seeds.length) return null;
-
     return (
       <Fragment key={roundIdx}>
         <Round
