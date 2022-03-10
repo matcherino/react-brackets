@@ -7,6 +7,7 @@ export interface RenderSeedProps {
     roundIndex: number;
     seedIndex: number;
     isConsolationMatch: boolean;
+    isFirstRound: boolean;
 }
 export interface SingleEliminationProps {
     rtl?: boolean;

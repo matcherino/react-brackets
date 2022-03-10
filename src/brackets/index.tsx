@@ -10,6 +10,7 @@ export interface RenderSeedProps {
   roundIndex: number;
   seedIndex: number;
   isConsolationMatch: boolean;
+  isFirstRound: boolean;
 }
 
 export interface SingleEliminationProps {
@@ -82,6 +83,7 @@ const SingleElimination = ({
                   roundIndex: roundIdx,
                   seedIndex: idx,
                   isConsolationMatch: false,
+                  isFirstRound: round.isFirstRound,
                 })}
               </Fragment>
             ))}
@@ -99,6 +101,7 @@ const SingleElimination = ({
                   roundIndex: roundIdx,
                   seedIndex: 0,
                   isConsolationMatch: true,
+                  isFirstRound: round.isFirstRound,
                 })}
               </Fragment>
             </SeedsList>

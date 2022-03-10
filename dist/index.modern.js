@@ -131,7 +131,8 @@ var SingleElimination = function SingleElimination(_ref) {
         breakpoint: mobileBreakpoint,
         roundIndex: roundIdx,
         seedIndex: idx,
-        isConsolationMatch: false
+        isConsolationMatch: false,
+        isFirstRound: round.isFirstRound
       }));
     }))), consolationMatch && roundIdx + 1 === rounds.length ? React.createElement(Round, {
       className: 'round-container',
@@ -143,7 +144,8 @@ var SingleElimination = function SingleElimination(_ref) {
       breakpoint: mobileBreakpoint,
       roundIndex: roundIdx,
       seedIndex: 0,
-      isConsolationMatch: true
+      isConsolationMatch: true,
+      isFirstRound: round.isFirstRound
     })))) : null);
   });
 
