@@ -65,6 +65,7 @@ const SingleElimination = ({
     });
 
     if (bracket?.entrants?.length > 4 && isHideByes && byeMatches.length === round.seeds.length) return null;
+
     return (
       <Fragment key={roundIdx}>
         <Round
